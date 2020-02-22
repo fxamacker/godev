@@ -1,9 +1,5 @@
-package main
+package godev
 
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println("Hello")
+func Greeting() string {
+	return "Hello"
 }
