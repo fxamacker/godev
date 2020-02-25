@@ -19,12 +19,16 @@ __`fxamacker/cbor`__ is safe and fast.  It safely handles malformed CBOR data:
 | Malformed data #1 | 57.4 ns/op, 32 B/op, 1 allocs/op | ⚠️ fatal error: out of memory |
 | Malformed data #2 | 67.7 ns/op, 32 B/op, 1 allocs/op | ⚠️ runtime: out of memory: cannot allocate |
 
+![alt text](https://github.com/fxamacker/images/raw/master/cbor/v2.2.0/cbor_security_table.svg?sanitize=1 "CBOR security comparison")
+
 __`fxamacker/cbor`__ is fast when using CBOR data with Go structs:
 
 |     | fxamacker/cbor 2.1 | ugorji/go 1.1.7 |
 | --- | ------------------ | --------------- |
 | Encode CWT claims | 457 ns/op, 176 B/op, 2 allocs/op | 995 ns/op, 1424 B/op, 4 allocs/op | 
 | Decode CWT claims | 796 ns/op, 176 B/op, 6 allocs/op | 1105 ns/op, 568 B/op, 6 allocs/op |
+
+![alt text](https://github.com/fxamacker/images/raw/master/cbor/v2.2.0/cbor_speed_table.svg?sanitize=1 "CBOR speed comparison")
 
 Benchmarks used data from [RFC 8392 Appendix A.1](https://tools.ietf.org/html/rfc8392#appendix-A.1) and default options for each CBOR library.
 
@@ -60,6 +64,8 @@ __`fxamacker/cbor`__ is a full-featured CBOR encoder and decoder.  Support for C
 | ✔️ | Well&#8209;formedness&nbsp;checks | Always checked and enforced. |
 | ✔️ | Basic validity checks | UTF-8 validity, etc. checked after well-formedness. |
 | ✔️ | Security considerations | Prevent integer overflow and resource exhaustion described in RFC&nbsp;7049&nbsp;Section&nbsp;8&nbsp;Security&nbsp;Considerations. |
+
+![alt text](https://github.com/fxamacker/images/raw/master/cbor/v2.2.0/cbor_features.svg?sanitize=1 "CBOR features")
 
 <hr>
 
