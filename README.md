@@ -3,6 +3,7 @@
 # CBOR library in Go
 [__fxamacker/cbor__](https://github.com/fxamacker/cbor) is a CBOR encoder & decoder in [Go](https://golang.org).  It has a standard API, CBOR tags, options for duplicate map keys, float64→32→16, `toarray`, `keyasint`, etc.  Each release passes 375+ tests and 250+ million execs fuzzing.
 
+
 [CBOR](CBOR_GOLANG.md) ([RFC 7049](https://tools.ietf.org/html/rfc7049)) is a binary data format inspired by JSON and MessagePack.  CBOR is an [Internet Standard](https://en.wikipedia.org/wiki/Internet_Standard) by [IETF](https://www.ietf.org) used in W3C [WebAuthn](https://en.wikipedia.org/wiki/WebAuthn), COSE ([RFC 8152](https://tools.ietf.org/html/rfc8152)), CWT ([RFC 8392 CBOR Web Token](https://tools.ietf.org/html/rfc8392)), and more.
 
 [![](https://github.com/fxamacker/cbor/workflows/ci/badge.svg)](https://github.com/fxamacker/cbor/actions?query=workflow%3Aci)
